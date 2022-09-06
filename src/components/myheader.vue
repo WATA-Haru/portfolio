@@ -1,22 +1,18 @@
 <template>
+    <!--参考 https://qiita.com/k00j/items/c0cf31f888492c87de35-->
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <router-link class="text-white px-3" to="/">home</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link class="text-white px-3" to="/about">about</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link class="text-white px-3" to="/works">works</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link class="text-white px-3" to="/contact">contact</router-link>
-                </li>
-                </ul>
-            </div>
-        </nav>
+      <b-navbar toggleable="lg" type="dark" variant="dark">
+        <b-navbar-brand to="/">Portfolio</b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <b-nav-item to="/about">about</b-nav-item>
+            <b-nav-item to="/works">works</b-nav-item>
+            <b-nav-item to="/contact">contact</b-nav-item>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </div>
 </template>

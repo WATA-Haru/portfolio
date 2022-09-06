@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <myheader></myheader>
-    <img src="./assets/logo.png">
+    <!--<img src="./assets/logo.png">-->
     <router-view/>
-    <button class="btn btn-primary">test</button>
   </div>
 </template>
 
@@ -26,6 +25,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  font-size: large;
+  /*margin-top: 60px;*/
 }
 </style>
