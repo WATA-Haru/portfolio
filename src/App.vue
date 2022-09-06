@@ -1,17 +1,25 @@
 <template>
   <div id="app">
+    <myheader></myheader>
     <img src="./assets/logo.png">
     <router-view/>
+    <button class="btn btn-primary">test</button>
   </div>
 </template>
 
 <script>
+import myheader from './components/myheader'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    myheader
+  }
 }
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
