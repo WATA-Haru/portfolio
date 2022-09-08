@@ -9,7 +9,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Haruto Watahiki Portfolio'
+      msg: 'Welcome to Haruto Watahiki Portfolio!!'
     }
   }
 }
